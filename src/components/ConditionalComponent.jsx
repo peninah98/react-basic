@@ -1,26 +1,14 @@
 import { useState } from "react"
 export default function ConditionalComponent(){
-    const [display, setDisplay] = useState(false)
-    if(display){
-        return  (
-       <div>
-        <h1>This is conditional component</h1>
-        
-       </div>
-       )
-    }
-    else{
-        return(
-            <div>
-                <h1>Nothing to see here</h1>
-            </div>
-        )
-    }
 
-    // return (
-    //     <div>
-    //         <h1>This is conditional component</h1>
-    //         <h1>Nothing to see here</h1>
-    //     </div>
-    // )
+    const [display, setDisplay] = useState(true)
+    return display ? 
+    (
+        <div> <h1>This is conditional component</h1></div>
+    ) : (
+        <div><h1>Nothing to see here</h1></div>
+    )
+
+
+    
 }
