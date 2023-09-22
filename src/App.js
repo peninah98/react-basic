@@ -9,6 +9,7 @@ import Resume from './components/Resume';
 import FunctionEvent from './components/FunctionEvents';
 import ClassEvent from './components/ClassEvent';
 import FunctionalComponent from './components/FunctionaCounter';
+import ConditionalComponent from './components/ConditionalComponent';
 
 function App() {
   return (
@@ -27,8 +28,9 @@ function App() {
      <FunctionEvent></FunctionEvent>
      <ClassEvent/>
      <FunctionalComponent/> */}
-     <Counter></Counter>
-     <FunctionalComponent/>
+     {/* <Counter></Counter>
+     <FunctionalComponent/> */}
+     <ConditionalComponent/>
    
     </div>
   );
