@@ -1,14 +1,10 @@
 import { useState } from "react"
-import Counter from "./Counter"
-import FunctionalComponent from "./FunctionaCounter"
-
 export default function ConditionalComponent(){
     const [display, setDisplay] = useState(false)
     if(display){
         return  (
        <div>
-        <Counter/>
-       
+        <h1>This is conditional component</h1>
         
        </div>
        )
@@ -16,7 +12,7 @@ export default function ConditionalComponent(){
     else{
         return(
             <div>
-                 <FunctionalComponent/>
+                <h1>Nothing to see here</h1>
             </div>
         )
     }
