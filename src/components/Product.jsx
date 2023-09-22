@@ -6,11 +6,25 @@ const products = [
     {id:3,name:"Modem",price: 50},
     {id:4,name:"Laptop",price: 90},
 ]
+
+const fruits = ["apple", 'Mango', 'Banana']
+
 const productList = products.map((product)=>(
-    <h3 key={product.id}> {product.name}: ${product.price}</h3>
+    <h3 key={product.id}>
+         {product.name}: ${product.price}
+    </h3>
 ))
+
+const fruitList = fruits.map((fruit,index)=>(
+    <li key={index}>
+        {fruit}
+         
+    </li>
+))
+
 
     return <div>
         {productList}
+        {fruitList}
     </div>
 }
