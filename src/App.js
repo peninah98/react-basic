@@ -8,6 +8,7 @@ import Counter from './components/Counter';
 import Resume from './components/Resume';
 import FunctionEvent from './components/FunctionEvents';
 import ClassEvent from './components/ClassEvent';
+import FunctionalComponent from './components/FunctionaCounter';
 
 function App() {
   return (
@@ -20,12 +21,15 @@ function App() {
       <p>Rwanda is a country of thousands hills</p>
      </Profile>
      <Song playList = "I love rock musics" favourites = "Gospel"/> */}
-     <Counter></Counter>
-     <Profile name ="Penine" lastname = 'Ngizwenayo'></Profile>
+     {/* 
+     {/* <Profile name ="Penine" lastname = 'Ngizwenayo'></Profile>
      <Resume category = 'Rwanga'></Resume>
      <FunctionEvent></FunctionEvent>
      <ClassEvent/>
-  
+     <FunctionalComponent/> */}
+     <Counter></Counter>
+     <FunctionalComponent/>
+   
     </div>
   );
 }
